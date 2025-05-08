@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_place/google_place.dart';
+import 'package:helloword/const.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:helloword/toilet.dart';
 
@@ -14,7 +15,7 @@ class SearchToiletPage extends StatefulWidget {
 }
 
 class SearchToiletPageState extends State<SearchToiletPage> {
-  final apiKey = "AIzaSyA38sOpTL4BQZg05pWR9yfdwWjg2auFXtM";
+  final apiKey = Const.apiKey;
 
   Toilet? toilet;
   Uri? mapURL;
